@@ -1,4 +1,4 @@
-### Hi there 👋, my name is Stepan
+### Hello guys👋, my name is Stepan
 #### I'm a ML engineer
 ![I'm a ML engineer](https://github.com/kulibabast/kulibabast/blob/main/images/hello-in-my-git.jpg)
 
