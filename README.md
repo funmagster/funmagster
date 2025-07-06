@@ -6,4 +6,4 @@
 ---
 
 # Contact me
-[<img src='https://github.com/funmagster/funmagster/blob/main/images/Telegram_logo.svg.png' alt='telegramm' height='40'>](https://t.me/Funmagster)  
+[<img src='https://github.com/funmagster/funmagster/blob/main/images/Telegram_logo.svg.png' alt='telegramm' width='50'>](https://t.me/Funmagster)
