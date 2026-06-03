@@ -88,7 +88,7 @@ Currently exploring multi-agent systems, efficient LLM training, automated machi
 ## Contact
 
 <p>
-  <a href="https://t.me/Funmagster">
+  <a href="https://t.me/stepankulibaba">
     <img src="https://github.com/funmagster/funmagster/blob/main/images/Telegram_logo.svg.png" alt="Telegram" width="40" />
   </a>
 </p>
