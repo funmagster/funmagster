@@ -21,16 +21,26 @@ Currently exploring multi-agent systems, efficient LLM training, automated machi
   <img src="https://skillicons.dev/icons?i=docker,git,github,linux,bash,fastapi,postgres" />
 </p>
 
-### Tools & Research
+### ML / LLM Tooling
 
 <p>
-  <img src="https://img.shields.io/badge/LLMs-000000?style=for-the-badge&logo=openai&logoColor=white" />
-  <img src="https://img.shields.io/badge/MoE-Mixture%20of%20Experts-8A2BE2?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/SDG--MoE-Signed%20Debate%20Graph-FF6F00?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/AutoML-1f6feb?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Optimization-6f42c1?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Recommender%20Systems-238636?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/LaTeX-008080?style=for-the-badge&logo=latex&logoColor=white" />
+  <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" />
+  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" />
+  <img src="https://img.shields.io/badge/LlamaIndex-000000?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/RAG-2E7D32?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Vector%20Search-005571?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/FAISS-0467DF?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Qdrant-DC244C?style=for-the-badge" />
+</p>
+
+### MLOps / Experiment Tracking
+
+<p>
+  <img src="https://img.shields.io/badge/Weights%20%26%20Biases-FFBE00?style=for-the-badge&logo=weightsandbiases&logoColor=black" />
+  <img src="https://img.shields.io/badge/MLflow-0194E2?style=for-the-badge&logo=mlflow&logoColor=white" />
+  <img src="https://img.shields.io/badge/DVC-945DD6?style=for-the-badge&logo=dvc&logoColor=white" />
+  <img src="https://img.shields.io/badge/Ray-028CF0?style=for-the-badge&logo=ray&logoColor=white" />
+  <img src="https://img.shields.io/badge/ONNX-005CED?style=for-the-badge&logo=onnx&logoColor=white" />
 </p>
 
 ---
