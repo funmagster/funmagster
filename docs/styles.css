@@ -416,6 +416,10 @@ section h2 {
 
 .media-container {
     margin-top: 1.5rem;
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 5px;
 }
 
 .media-placeholder {
@@ -561,7 +565,7 @@ section h2 {
 
 /* Diploma Thumbnails */
 .diploma-thumb {
-    height: 120px;
+    height: 200px;
     width: auto;
     border-radius: 8px;
     object-fit: contain;
@@ -571,6 +575,7 @@ section h2 {
     transition: transform 0.2s, box-shadow 0.2s;
     background-color: #fff;
     padding: 5px;
+    flex-shrink: 0;
 }
 .diploma-thumb:hover {
     transform: translateY(-2px);
