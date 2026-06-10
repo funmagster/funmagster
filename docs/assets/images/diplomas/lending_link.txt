@@ -1,0 +1,2 @@
+BV_24: https://bigchallenges.ru/projects2024/bigdata_6
+BV_23: https://bigchallenges.ru/projects2023/medsi

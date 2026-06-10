@@ -24,18 +24,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // Modal Logic for Media (Certificates/Diplomas)
     const modal = document.getElementById('imageModal');
     const modalImg = document.getElementById('expandedImg');
+    const captionText = document.getElementById('caption');
     const span = document.getElementsByClassName('close-modal')[0];
 
-    // Placeholder logic - in real usage, you'd attach click events to images or media-placeholders
-    const placeholders = document.querySelectorAll('.media-placeholder');
-    placeholders.forEach(ph => {
-        ph.addEventListener('click', () => {
-            // In a fully filled site, you'd set modalImg.src = path_to_image
-            // Here we just show an alert since no real images are linked yet
-            // modal.style.display = "block";
-            // modalImg.src = "assets/images/placeholder_diploma.png"; 
-        });
-    });
+    // Expose openModal to the global window object so onclick attributes can use it
+    window.openModal = function(imgSrc, caption = '') {
+        modal.style.display = "block";
+        modalImg.src = imgSrc;
+        captionText.innerHTML = caption;
+    };
 
     if (span) {
         span.onclick = function() {

@@ -50,8 +50,8 @@
                 </div>
 
                 <div class="action-buttons">
-                    <a href="#" class="btn btn-primary" onclick="alert('Resume PDF will be linked here.')">Resume</a>
-                    <a href="#" class="btn btn-outline" onclick="alert('CV PDF will be linked here.')">Full CV</a>
+                    <a href="assets/Resume_Stepan_Kulibaba.pdf" target="_blank" class="btn btn-primary">Resume</a>
+                    <a href="assets/Resume_Stepan_Kulibaba.pdf" target="_blank" class="btn btn-outline">Full CV</a>
                 </div>
             </div>
         </aside>
@@ -214,11 +214,11 @@
                                     <div class="meta">Issued by Sirius Educational Center &bull; May 2026</div>
                                 </div>
                             </div>
-                            <p>Named Grand Prize Winner and received the People's Choice Award at the 2026 International Big Challenges Competition, a selective science and technology contest where young researchers present complete author-led projects.</p>
+                            <p>Named Grand Prize Winner and received the People's Choice Award at the 2026 International Big Challenges Competition, a selective science and technology contest where young researchers present complete author-led projects before academic and industry experts.</p>
+                            <p>The project proposed SDG-MoE, a new Mixture-of-Experts architecture inspired by social deliberation. Active experts interacted through learned support and critique graphs, allowing them to exchange information and refine their representations before producing a collective output.</p>
                             <div class="media-container">
-                                <!-- Placeholder for diploma image -->
-                                <div class="media-placeholder" onclick="alert('Image preview feature to be implemented.')">
-                                    <span>View Diploma / Certificate</span>
+                                <div class="media-placeholder" onclick="openModal('assets/images/diplomas/Big_Challenges_2026.png', 'Winner Diploma, International Big Challenges 2026')">
+                                    <span>View Diploma</span>
                                 </div>
                             </div>
                         </div>
@@ -232,55 +232,162 @@
                                 </div>
                             </div>
                             <p>Earned national prize-winner status in the final stage of the All-Russian Olympiad in Informatics, ranking 19th overall among 245 finalists in the Artificial Intelligence track.</p>
+                            <p>The final consisted of two intensive five-hour rounds. The theoretical round assessed mathematical foundations of AI (probability, statistics, linear algebra, calculus, optimization). The practical round focused on data analysis and machine learning, requiring participants to develop, train, evaluate, and improve models under strict time constraints.</p>
                             <div class="media-container">
-                                <div class="media-placeholder" onclick="alert('Image preview feature to be implemented.')">
-                                    <span>View Certificate</span>
+                                <div class="media-placeholder" onclick="openModal('assets/images/diplomas/VSOSH_AI_2026.jpg', 'Award Ceremony at the All-Russian School Olympiad in Artificial Intelligence')">
+                                    <span>View Photo</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card award-card">
+                            <div class="award-header">
+                                <div class="award-icon">🥇</div>
+                                <div class="award-info">
+                                    <h4>National Winner, DANO Data Analysis Olympiad — 16th Overall</h4>
+                                    <div class="meta">Issued by Higher School of Economics &bull; Dec 2025</div>
+                                </div>
+                            </div>
+                            <p>Received a First-Degree Diploma and ranked 16th overall in the national final of DANO, one of Russia's leading high-school competitions in statistics, data analysis, and applied data science.</p>
+                            <p>The competition evaluates technical modeling skills, research design, hypothesis formulation, statistical validation, visualization, and practical relevance.</p>
+                            <div class="media-container" style="display: flex; gap: 10px;">
+                                <div class="media-placeholder" style="flex:1;" onclick="openModal('assets/images/diplomas/dano_photo_2025.jpg', 'DANO 2025 - Award Ceremony')">
+                                    <span>View Award Ceremony</span>
+                                </div>
+                                <div class="media-placeholder" style="flex:1;" onclick="openModal('assets/images/diplomas/award_dano_24.jpg', 'DANO First-Degree Diploma')">
+                                    <span>View Diploma</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card award-card">
+                            <div class="award-header">
+                                <div class="award-icon">🥈</div>
+                                <div class="award-info">
+                                    <h4>International Second-Place Winner, Young Scientists Hackathon 2025</h4>
+                                    <div class="meta">Issued by Sirius University of Science and Technology &bull; Nov 2025</div>
+                                </div>
+                            </div>
+                            <p>Placed 2nd at the Young Scientists Hackathon 2025, an international product-focused competition. Within a 27-hour coding window, our team developed "Academic Profile: A Scientist's Digital Footprint," an intelligent platform for automating the collection, systematization, analysis, and visualization of scientific publication data.</p>
+                            <div class="media-container">
+                                <div class="media-placeholder" onclick="openModal('assets/images/diplomas/Hackathon_2025.jpg', 'Presenting Academic Profile to the Expert Jury')">
+                                    <span>View Presentation</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card award-card">
+                            <div class="award-header">
+                                <div class="award-icon">🥈</div>
+                                <div class="award-info">
+                                    <h4>International Silver Award, Fizmat AI Olympiad 2025</h4>
+                                    <div class="meta">Issued by Fizmat AI Olympiad &bull; Oct 2025</div>
+                                </div>
+                            </div>
+                            <p>Placed 2nd overall as part of a three-person team. Solved five end-to-end machine learning problems under strict time constraints, covering audio processing, recommender systems, CV, and retrieval-based QA with LLMs.</p>
+                            <div class="media-container">
+                                <div class="media-placeholder" onclick="openModal('assets/images/diplomas/FAIO_2025.jpg', 'FAIO 2025 Finalists and Award Winners')">
+                                    <span>View Diploma / Photo</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card award-card">
+                            <div class="award-header">
+                                <div class="award-icon">🏆</div>
+                                <div class="award-info">
+                                    <h4>Grand Prize Winner & People's Choice Award, Big Challenges 2025</h4>
+                                    <div class="meta">Issued by Sirius Educational Center &bull; May 2025</div>
+                                </div>
+                            </div>
+                            <p>Named Grand Prize Winner. The project developed an autonomous multi-agent AutoML system designed to help researchers construct complete machine learning pipelines through tree-guided exploration and automated debugging.</p>
+                            <div class="media-container">
+                                <div class="media-placeholder" onclick="openModal('assets/images/diplomas/Big_Challenges_2025.png', 'Winner Diploma, Big Challenges 2025')">
+                                    <span>View Diploma</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card award-card">
+                            <div class="award-header">
+                                <div class="award-icon">🥇</div>
+                                <div class="award-info">
+                                    <h4>National Winner & 1st Place (Grade 10), DANO Data Analysis Olympiad</h4>
+                                    <div class="meta">Issued by Higher School of Economics &bull; Dec 2024</div>
+                                </div>
+                            </div>
+                            <p>Earned a First-Degree Diploma and achieved the highest overall result among Grade 10 participants, placing 9th in the national final ranking. In the team-based project round, our team placed 1st overall.</p>
+                            <div class="media-container">
+                                <div class="media-placeholder" onclick="openModal('assets/images/diplomas/team_dano_24.jpg', '1st Place Team Recognition at DANO')">
+                                    <span>View Team Photo</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card award-card">
+                            <div class="award-header">
+                                <div class="award-icon">🥇</div>
+                                <div class="award-info">
+                                    <h4>First-Place Winner, Big Challenges 2024</h4>
+                                    <div class="meta">Issued by Sirius Educational Center &bull; May 2024</div>
+                                </div>
+                            </div>
+                            <p>Won with SolveMath, an AI-assisted platform for generating detailed and interpretable solutions to mathematical problems, combining LLM reasoning with a dedicated MathTools service.</p>
+                            <div class="media-container">
+                                <div class="media-placeholder" onclick="openModal('assets/images/diplomas/Big_Challenges_2024.png', 'Winner Diploma, Big Challenges 2024')">
+                                    <span>View Diploma</span>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="award-category">
-                        <h3 class="category-title">Mathematics & Physics (Olympiads)</h3>
+                        <h3 class="category-title">Mathematics, Physics & Algorithms (Olympiads)</h3>
                         
                         <div class="card award-card">
                             <div class="award-header">
                                 <div class="award-icon">🥈</div>
                                 <div class="award-info">
-                                    <h4>Placeholder: Regional/National Olympiad in Physics</h4>
-                                    <div class="meta">Issued by Example Organization &bull; Year</div>
+                                    <h4>Second-Degree Prize Winner, Moscow School Olympiad in Physics</h4>
+                                    <div class="meta">Issued by Moscow Dept of Education & Lomonosov MSU &bull; Feb 2026</div>
                                 </div>
                             </div>
-                            <p>Description of the achievement, preparation, and result.</p>
-                        </div>
-                        
-                        <div class="card award-card">
-                            <div class="award-header">
-                                <div class="award-icon">🥈</div>
-                                <div class="award-info">
-                                    <h4>Placeholder: Regional/National Olympiad in Mathematics</h4>
-                                    <div class="meta">Issued by Example Organization &bull; Year</div>
-                                </div>
-                            </div>
-                            <p>Description of the achievement.</p>
-                        </div>
-                    </div>
-
-                    <div class="award-category">
-                        <h3 class="category-title">Selections & Participations (Honorable Mentions)</h3>
-                        
-                        <div class="card award-card">
-                            <div class="award-header">
-                                <div class="award-icon">📜</div>
-                                <div class="award-info">
-                                    <h4>Placeholder: International Selection Finalist</h4>
-                                    <div class="meta">Issued by Example Organization &bull; Year</div>
-                                </div>
-                            </div>
-                            <p>Participated in rigorous multi-stage selections. Reached the final stages demonstrating high competence, missing the final team by a small margin.</p>
+                            <p>Earned a Second-Degree Diploma in the final stage of the Moscow School Olympiad in Physics, a Level I Olympiad requiring rigorous mathematical modeling and application of fundamental principles.</p>
                             <div class="media-container">
-                                <div class="media-placeholder">
-                                    <span>View Certificate of Participation</span>
+                                <div class="media-placeholder" onclick="openModal('assets/images/diplomas/Moscow_Physics_2026.png', 'Second-Degree Diploma, Moscow School Olympiad in Physics')">
+                                    <span>View Diploma</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card award-card">
+                            <div class="award-header">
+                                <div class="award-icon">🥇</div>
+                                <div class="award-info">
+                                    <h4>Winner, All-Siberian Open Physics Olympiad</h4>
+                                    <div class="meta">Issued by Novosibirsk State University &bull; Mar 2025</div>
+                                </div>
+                            </div>
+                            <p>Earned winner status in the final stage of the All-Siberian Open Physics Olympiad, recognized as a Level II competition reflecting strong national academic standing.</p>
+                            <div class="media-container">
+                                <div class="media-placeholder" onclick="openModal('assets/images/diplomas/Siberian_Physics_2025.png', 'Official Winner Diploma, All-Siberian Open Physics Olympiad')">
+                                    <span>View Diploma</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card award-card">
+                            <div class="award-header">
+                                <div class="award-icon">🏅</div>
+                                <div class="award-info">
+                                    <h4>Team Prize Winner, RuCode 2024 Algorithmic Programming Championship</h4>
+                                    <div class="meta">Issued by RuCode & MIPT &bull; Oct 2024</div>
+                                </div>
+                            </div>
+                            <p>Earned team prize-winner status in the final of the RuCode 2024 Algorithmic Programming Championship. The competition required rapid algorithm selection, rigorous reasoning, and efficient implementation under time constraints.</p>
+                            <div class="media-container">
+                                <div class="media-placeholder" onclick="openModal('assets/images/diplomas/RuCode_2024.jpg', 'Prize-Winner Diploma, RuCode 2024 Algorithmic Programming Final')">
+                                    <span>View Diploma</span>
                                 </div>
                             </div>
                         </div>
