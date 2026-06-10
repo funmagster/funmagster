@@ -46,4 +46,34 @@ document.addEventListener('DOMContentLoaded', () => {
             modal.style.display = "none";
         }
     }
+
+    // Toast Notification Logic
+    window.showToast = function(message) {
+        const toast = document.getElementById("toast");
+        toast.innerText = message;
+        toast.className = "toast show";
+        setTimeout(function(){ toast.className = toast.className.replace("show", ""); }, 3000);
+    };
+
+    // Awards Filtering Logic
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const awardCategories = document.querySelectorAll('.award-category');
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // Remove active class from all buttons
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            const filterValue = btn.getAttribute('data-filter');
+
+            awardCategories.forEach(category => {
+                if (filterValue === 'all' || category.getAttribute('data-category') === filterValue) {
+                    category.style.display = 'block';
+                } else {
+                    category.style.display = 'none';
+                }
+            });
+        });
+    });
 });

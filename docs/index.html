@@ -51,7 +51,7 @@
 
                 <div class="action-buttons">
                     <a href="assets/Resume_Stepan_Kulibaba.pdf" target="_blank" class="btn btn-primary">Resume</a>
-                    <a href="assets/Resume_Stepan_Kulibaba.pdf" target="_blank" class="btn btn-outline">Full CV</a>
+                    <a href="#" onclick="showToast('I haven\'t added my full CV yet, but will add it soon!'); return false;" class="btn btn-outline">Full CV</a>
                 </div>
             </div>
         </aside>
@@ -93,8 +93,7 @@
                             <div class="card experience-card">
                                 <h3>AI Researcher</h3>
                                 <div class="company">Innopolis University</div>
-                                <div class="date">Aug 2025 - Present &bull; Part-time</div>
-                                <div class="location">Innopolis, Tatarstan, Russia &bull; Remote</div>
+                                <div class="date">Aug 2025 - Present &bull; Part-time &bull; Innopolis, Tatarstan, Russia (Remote)</div>
                                 <div class="skills">Skills: Multi-agent Systems, Deep Learning, Machine Learning</div>
                             </div>
                         </div>
@@ -104,8 +103,7 @@
                             <div class="card experience-card">
                                 <h3>Machine Learning Research Intern</h3>
                                 <div class="company">Moscow Institute of Physics and Technology (MIPT)</div>
-                                <div class="date">Jun 2025 - Oct 2025 &bull; 5 mos</div>
-                                <div class="location">Sirius University of Science and Technology, Sochi &bull; On-site</div>
+                                <div class="date">Jun 2025 - Oct 2025 &bull; 5 mos &bull; Sirius University of Science and Technology, Sochi (On-site)</div>
                                 <p>Core researcher and developer in a joint MIPT research group studying communication-efficient distributed training of large language models.</p>
                             </div>
                         </div>
@@ -203,7 +201,13 @@
                 <section id="awards" class="tab-content fade-in">
                     <h2>Honors & Awards</h2>
                     
-                    <div class="award-category">
+                    <div class="filter-container">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="ai">AI & Projects</button>
+                        <button class="filter-btn" data-filter="math">Math, Physics & Algorithms</button>
+                    </div>
+
+                    <div class="award-category" data-category="ai">
                         <h3 class="category-title">Artificial Intelligence & Project Competitions</h3>
                         
                         <div class="card award-card">
@@ -341,7 +345,7 @@
                         </div>
                     </div>
 
-                    <div class="award-category">
+                    <div class="award-category" data-category="math">
                         <h3 class="category-title">Mathematics, Physics & Algorithms (Olympiads)</h3>
                         
                         <div class="card award-card">
@@ -399,35 +403,8 @@
                     <h2>Selected Projects</h2>
                     <p class="section-desc">Showcase of software engineering and machine learning projects.</p>
                     
-                    <div class="grid-layout">
-                        <!-- Placeholder Project -->
-                        <div class="card project-card">
-                            <h3>Project Name Placeholder</h3>
-                            <div class="tech-stack">
-                                <span>PyTorch</span>
-                                <span>Python</span>
-                                <span>FastAPI</span>
-                            </div>
-                            <p>A brief description of what this project does, the technical challenges faced, and the solutions implemented. It should highlight both the engineering quality and the mathematical foundation.</p>
-                            <div class="links-row">
-                                <a href="#" class="link-btn">GitHub Repo ↗</a>
-                                <a href="#" class="link-btn">Live Demo ↗</a>
-                            </div>
-                        </div>
-                        
-                        <!-- Placeholder Project -->
-                        <div class="card project-card">
-                            <h3>Another Project Placeholder</h3>
-                            <div class="tech-stack">
-                                <span>LangChain</span>
-                                <span>LLMs</span>
-                                <span>Docker</span>
-                            </div>
-                            <p>Description for the second project, focusing on outcomes and architecture.</p>
-                            <div class="links-row">
-                                <a href="#" class="link-btn">GitHub Repo ↗</a>
-                            </div>
-                        </div>
+                    <div class="placeholder-notice">
+                        <p>I am currently organizing my portfolio. Detailed descriptions of my projects will be added here soon!</p>
                     </div>
                 </section>
 
@@ -441,6 +418,9 @@
         <img class="modal-content" id="expandedImg">
         <div id="caption"></div>
     </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">Message</div>
 
     <script src="script.js"></script>
 </body>
