@@ -202,13 +202,17 @@
                     <div class="filter-container">
                         <button class="filter-btn active" data-filter="all">All</button>
                         <button class="filter-btn" data-filter="ai">AI & Projects</button>
-                        <button class="filter-btn" data-filter="math">Math, Physics & Algorithms</button>
+                        <button class="filter-btn" data-filter="physics">Physics</button>
+                        <button class="filter-btn" data-filter="algorithms">Algorithms & Data Analysis</button>
                     </div>
 
-                    <div class="award-category" data-category="ai">
-                        <h3 class="category-title">Artificial Intelligence & Project Competitions</h3>
-                        
-                        <div class="card award-card">
+                    <div class="award-category collapsible" data-category="ai">
+                        <h3 class="category-title" onclick="toggleCategory(this)" style="cursor:pointer; display:flex; justify-content:space-between; align-items:center;">
+                            Artificial Intelligence & Project Competitions 
+                            <span class="toggle-icon">▼</span>
+                        </h3>
+                        <div class="category-content">
+<div class="card award-card">
                             <div class="award-header">
                                 <div class="award-icon">🏆</div>
                                 <div class="award-info">
@@ -220,10 +224,7 @@
                             <p>The project proposed SDG-MoE, a new Mixture-of-Experts architecture inspired by social deliberation. Active experts interacted through learned support and critique graphs, allowing them to exchange information and refine their representations before producing a collective output.</p>
                             <div class="media-container">
                                 <img src="assets/images/diplomas/Big_Challenges_2026.png" class="diploma-thumb" alt="Winner Diploma, International Big Challenges 2026" onclick="openModal(this.src, 'Winner Diploma, International Big Challenges 2026')">
-                            </div>
-                        </div>
-
-                        <div class="card award-card">
+                            </div><div class="card award-card">
                             <div class="award-header">
                                 <div class="award-icon">🥇</div>
                                 <div class="award-info">
@@ -235,26 +236,7 @@
                             <p>The final consisted of two intensive five-hour rounds. The theoretical round assessed mathematical foundations of AI (probability, statistics, linear algebra, calculus, optimization). The practical round focused on data analysis and machine learning, requiring participants to develop, train, evaluate, and improve models under strict time constraints.</p>
                             <div class="media-container">
                                 <img src="assets/images/diplomas/VSOSH_AI_2026.jpg" class="diploma-thumb" alt="Award Ceremony at the All-Russian School Olympiad in Artificial Intelligence" onclick="openModal(this.src, 'Award Ceremony at the All-Russian School Olympiad in Artificial Intelligence')">
-                            </div>
-                        </div>
-
-                        <div class="card award-card">
-                            <div class="award-header">
-                                <div class="award-icon">🥇</div>
-                                <div class="award-info">
-                                    <h4>National Winner, DANO Data Analysis Olympiad — 16th Overall</h4>
-                                    <div class="meta">Issued by Higher School of Economics &bull; Dec 2025</div>
-                                </div>
-                            </div>
-                            <p>Received a First-Degree Diploma and ranked 16th overall in the national final of DANO, one of Russia's leading high-school competitions in statistics, data analysis, and applied data science.</p>
-                            <p>The competition evaluates technical modeling skills, research design, hypothesis formulation, statistical validation, visualization, and practical relevance.</p>
-                            <div class="media-container" style="display: flex; gap: 10px;">
-                                <img src="assets/images/diplomas/dano_photo_2025.jpg" class="diploma-thumb" style="flex:1; width:100%; object-fit: cover;" alt="DANO 2025 - Award Ceremony" onclick="openModal(this.src, 'DANO 2025 - Award Ceremony')">
-                                <img src="assets/images/diplomas/award_dano_24.jpg" class="diploma-thumb" style="flex:1; width:100%; object-fit: cover;" alt="DANO First-Degree Diploma" onclick="openModal(this.src, 'DANO First-Degree Diploma')">
-                            </div>
-                        </div>
-
-                        <div class="card award-card">
+                            </div><div class="card award-card">
                             <div class="award-header">
                                 <div class="award-icon">🥈</div>
                                 <div class="award-info">
@@ -265,10 +247,7 @@
                             <p>Placed 2nd at the Young Scientists Hackathon 2025, an international product-focused competition. Within a 27-hour coding window, our team developed "Academic Profile: A Scientist's Digital Footprint," an intelligent platform for automating the collection, systematization, analysis, and visualization of scientific publication data.</p>
                             <div class="media-container">
                                 <img src="assets/images/diplomas/Hackathon_2025.jpg" class="diploma-thumb" alt="Presenting Academic Profile to the Expert Jury" onclick="openModal(this.src, 'Presenting Academic Profile to the Expert Jury')">
-                            </div>
-                        </div>
-
-                        <div class="card award-card">
+                            </div><div class="card award-card">
                             <div class="award-header">
                                 <div class="award-icon">🥈</div>
                                 <div class="award-info">
@@ -279,10 +258,7 @@
                             <p>Placed 2nd overall as part of a three-person team. Solved five end-to-end machine learning problems under strict time constraints, covering audio processing, recommender systems, CV, and retrieval-based QA with LLMs.</p>
                             <div class="media-container">
                                 <img src="assets/images/diplomas/FAIO_2025.jpg" class="diploma-thumb" alt="FAIO 2025 Finalists and Award Winners" onclick="openModal(this.src, 'FAIO 2025 Finalists and Award Winners')">
-                            </div>
-                        </div>
-
-                        <div class="card award-card">
+                            </div><div class="card award-card">
                             <div class="award-header">
                                 <div class="award-icon">🏆</div>
                                 <div class="award-info">
@@ -293,24 +269,7 @@
                             <p>Named Grand Prize Winner. The project developed an autonomous multi-agent AutoML system designed to help researchers construct complete machine learning pipelines through tree-guided exploration and automated debugging.</p>
                             <div class="media-container">
                                 <img src="assets/images/diplomas/Big_Challenges_2025.png" class="diploma-thumb" alt="Winner Diploma, Big Challenges 2025" onclick="openModal(this.src, 'Winner Diploma, Big Challenges 2025')">
-                            </div>
-                        </div>
-
-                        <div class="card award-card">
-                            <div class="award-header">
-                                <div class="award-icon">🥇</div>
-                                <div class="award-info">
-                                    <h4>National Winner & 1st Place (Grade 10), DANO Data Analysis Olympiad</h4>
-                                    <div class="meta">Issued by Higher School of Economics &bull; Dec 2024</div>
-                                </div>
-                            </div>
-                            <p>Earned a First-Degree Diploma and achieved the highest overall result among Grade 10 participants, placing 9th in the national final ranking. In the team-based project round, our team placed 1st overall.</p>
-                            <div class="media-container">
-                                <img src="assets/images/diplomas/team_dano_24.jpg" class="diploma-thumb" alt="1st Place Team Recognition at DANO" onclick="openModal(this.src, '1st Place Team Recognition at DANO')">
-                            </div>
-                        </div>
-
-                        <div class="card award-card">
+                            </div><div class="card award-card">
                             <div class="award-header">
                                 <div class="award-icon">🥇</div>
                                 <div class="award-info">
@@ -323,12 +282,16 @@
                                 <img src="assets/images/diplomas/Big_Challenges_2024.png" class="diploma-thumb" alt="Winner Diploma, Big Challenges 2024" onclick="openModal(this.src, 'Winner Diploma, Big Challenges 2024')">
                             </div>
                         </div>
+                        </div>
                     </div>
 
-                    <div class="award-category" data-category="math">
-                        <h3 class="category-title">Mathematics, Physics & Algorithms (Olympiads)</h3>
-                        
-                        <div class="card award-card">
+                    <div class="award-category collapsible" data-category="physics">
+                        <h3 class="category-title" onclick="toggleCategory(this)" style="cursor:pointer; display:flex; justify-content:space-between; align-items:center;">
+                            Physics (Olympiads)
+                            <span class="toggle-icon">▼</span>
+                        </h3>
+                        <div class="category-content">
+<div class="card award-card">
                             <div class="award-header">
                                 <div class="award-icon">🥈</div>
                                 <div class="award-info">
@@ -339,10 +302,7 @@
                             <p>Earned a Second-Degree Diploma in the final stage of the Moscow School Olympiad in Physics, a Level I Olympiad requiring rigorous mathematical modeling and application of fundamental principles.</p>
                             <div class="media-container">
                                 <img src="assets/images/diplomas/Moscow_Physics_2026.png" class="diploma-thumb" alt="Second-Degree Diploma, Moscow School Olympiad in Physics" onclick="openModal(this.src, 'Second-Degree Diploma, Moscow School Olympiad in Physics')">
-                            </div>
-                        </div>
-                        
-                        <div class="card award-card">
+                            </div><div class="card award-card">
                             <div class="award-header">
                                 <div class="award-icon">🥇</div>
                                 <div class="award-info">
@@ -355,8 +315,39 @@
                                 <img src="assets/images/diplomas/Siberian_Physics_2025.png" class="diploma-thumb" alt="Official Winner Diploma, All-Siberian Open Physics Olympiad" onclick="openModal(this.src, 'Official Winner Diploma, All-Siberian Open Physics Olympiad')">
                             </div>
                         </div>
+                    </div>
 
-                        <div class="card award-card">
+                    <div class="award-category collapsible" data-category="algorithms">
+                        <h3 class="category-title" onclick="toggleCategory(this)" style="cursor:pointer; display:flex; justify-content:space-between; align-items:center;">
+                            Algorithms & Data Analysis
+                            <span class="toggle-icon">▼</span>
+                        </h3>
+                        <div class="category-content">
+<div class="card award-card">
+                            <div class="award-header">
+                                <div class="award-icon">🥇</div>
+                                <div class="award-info">
+                                    <h4>National Winner, DANO Data Analysis Olympiad — 16th Overall</h4>
+                                    <div class="meta">Issued by Higher School of Economics &bull; Dec 2025</div>
+                                </div>
+                            </div>
+                            <p>Received a First-Degree Diploma and ranked 16th overall in the national final of DANO, one of Russia's leading high-school competitions in statistics, data analysis, and applied data science.</p>
+                            <p>The competition evaluates technical modeling skills, research design, hypothesis formulation, statistical validation, visualization, and practical relevance.</p>
+                            <div class="media-container" style="display: flex; gap: 10px;">
+                                <img src="assets/images/diplomas/dano_photo_2025.jpg" class="diploma-thumb" style="flex:1; width:100%; object-fit: contain;" alt="DANO 2025 - Award Ceremony" onclick="openModal(this.src, 'DANO 2025 - Award Ceremony')">
+                                <img src="assets/images/diplomas/award_dano_24.jpg" class="diploma-thumb" style="flex:1; width:100%; object-fit: contain;" alt="DANO First-Degree Diploma" onclick="openModal(this.src, 'DANO First-Degree Diploma')">
+                            </div><div class="card award-card">
+                            <div class="award-header">
+                                <div class="award-icon">🥇</div>
+                                <div class="award-info">
+                                    <h4>National Winner & 1st Place (Grade 10), DANO Data Analysis Olympiad</h4>
+                                    <div class="meta">Issued by Higher School of Economics &bull; Dec 2024</div>
+                                </div>
+                            </div>
+                            <p>Earned a First-Degree Diploma and achieved the highest overall result among Grade 10 participants, placing 9th in the national final ranking. In the team-based project round, our team placed 1st overall.</p>
+                            <div class="media-container">
+                                <img src="assets/images/diplomas/team_dano_24.jpg" class="diploma-thumb" alt="1st Place Team Recognition at DANO" onclick="openModal(this.src, '1st Place Team Recognition at DANO')">
+                            </div><div class="card award-card">
                             <div class="award-header">
                                 <div class="award-icon">🏅</div>
                                 <div class="award-info">
@@ -368,6 +359,7 @@
                             <div class="media-container">
                                 <img src="assets/images/diplomas/RuCode_2024.jpg" class="diploma-thumb" alt="Prize-Winner Diploma, RuCode 2024 Algorithmic Programming Final" onclick="openModal(this.src, 'Prize-Winner Diploma, RuCode 2024 Algorithmic Programming Final')">
                             </div>
+                        </div>
                         </div>
                     </div>
                 </section>

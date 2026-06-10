@@ -77,3 +77,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+    // Collapsible Categories Logic
+    window.toggleCategory = function(header) {
+        const content = header.nextElementSibling;
+        const icon = header.querySelector('.toggle-icon');
+        if (content.style.display === 'none') {
+            content.style.display = 'block';
+            icon.innerText = '¡';
+        } else {
+            content.style.display = 'none';
+            icon.innerText = '?';
+        }
+    };
