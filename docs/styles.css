@@ -545,18 +545,18 @@ section h2 {
     position: fixed;
     z-index: 10000;
     left: 50%;
-    bottom: 30px;
+    top: 30px;
     transform: translateX(-50%);
     font-size: 15px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     opacity: 0;
-    transition: opacity 0.3s, bottom 0.3s;
+    transition: opacity 0.3s, top 0.3s;
 }
 
 .toast.show {
     visibility: visible;
     opacity: 1;
-    bottom: 50px;
+    top: 50px;
 }
 
 /* Diploma Thumbnails */
